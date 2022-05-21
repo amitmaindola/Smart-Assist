@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab&display=swap');
+html{
+    color: rgb(184, 240, 237);
+    background-color: black;
+}
+html body{
+    background-color: rgb(12, 4, 32)!important;
+}
+
+html, div, p, body, h1, h2, h3, h4, h5, h6, *{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar{
+    background-color: rgb(40, 40, 70);
+    color: white;
+}
+
+#showList{
+    display: none;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+}
+
+.wrapper div.upload, .wrapper textarea{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+}
+.wrapper div{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+}
+
+.wrapper textarea{
+    border: 3px ridge rgb(2, 6, 58);
+    margin-bottom: 5px;
+}
+ul{
+    font-family: 'Roboto Slab', serif;
+}
+
+ul h1{
+    font-family: 'Kanit', sans-serif;
+}
+
+form i{
+    color: rgb(2, 6, 58);
+}
+
+.form input[type=submit]{
+    color: white;
+    background-color: rgb(2, 6, 58);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form input[type=submit]:hover{
+    background-color: rgba(3, 9, 37, 1);
+}
+
+.form h3{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.form input[type=file]{
+    max-width: 400px;
+}
+
+.summary{
+    border: 3px ridge wheat;
+    padding: 20px;
+    border-radius: 30px 0px 30px 0px;
+    -webkit-border-radius: 30px 0px 30px 0px;
+    -moz-border-radius: 30px 0px 30px 0px;
+    -ms-border-radius: 30px 0px 30px 0px;
+    -o-border-radius: 30px 0px 30px 0px;
+}

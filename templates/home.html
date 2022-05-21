@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpMarks</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <div class="background">
+        <img id="scene-first"  height="400" class="scene" data-modifier="30" src="/static/images/rocks.png">
+        <img class="scene" data-modifier="18" src="https://s.electerious.com/parallaxscene/p1.png">
+        <img class="scene" data-modifier="12" src="https://s.electerious.com/parallaxscene/p2.png">
+        <img class="scene" data-modifier="8" src="https://s.electerious.com/parallaxscene/p3.png">
+        <img class="scene" data-modifier="6" src="https://s.electerious.com/parallaxscene/p4.png">
+        <img class="scene" data-modifier="0" src="https://s.electerious.com/parallaxscene/p6.png">
+    </div>
+
+    <div class="header flex flex-row justify-between px-40">
+        <!-- <div class="logo text-white text-2xl font-bold"> -->
+        <img class="logo" src="/static/images/Smart Assist.png" style="object-fit: cover;" alt="">
+        <!-- </div> -->
+        <div class="links flex flex-row justify-between text-white text-xl">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="landing ">
+        <h1 class="main-text text-4xl text-white mb-5">Studies Made Easy</h1>
+        <h1 class="main-text text-4xl text-white">With</h1>
+        <div class="info-cover">
+            <img src="/static/images/Smart Assist.png" alt="">
+            <div class="info text-white text-2xl">
+                <b class="font-medium" id="text"></b>
+                <span id="span">_</span>
+            </div>
+            <a class="btn" href="/home">Get Started</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/basicscroll/2.0.0/basicScroll.min.js" integrity="sha512-gp6kz4bToO0kmDMCbyDEV/9/pljTYdkBldJMjC6ASLoTt6ShtQ8bGU7qVUZiNQUDDoVi8GL3vDcTUVnLxF9NoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/home.js"></script>
+</body>
+
+</html>

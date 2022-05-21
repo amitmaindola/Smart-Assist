@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- <p>File uploaded successfully</p>
+<p>File Name: {{name}}</p> -->
+<h1 class="text-2xl my-10 font-semibold text-center">Here Is The Summary</h1>
+<div class="summary ">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, rerum accusamus sapiente nesciunt expedita quae tempore voluptas velit modi sint magnam accusantium fugiat molestiae, perferendis, non reiciendis doloremque ut voluptates beatae quos quas. Pariatur, consectetur! Ut sint inventore explicabo non, aspernatur nihil, adipisci ducimus a voluptates, expedita natus totam eos maxime distinctio omnis accusamus excepturi. Labore impedit deserunt assumenda maxime fugit saepe. Laboriosam, cupiditate quam assumenda deleniti debitis illo accusamus quisquam voluptatibus animi neque dolorem voluptas ipsa ipsam numquam iusto consequatur maxime. Praesentium consequuntur quas officiis illo, quam debitis explicabo aut eos voluptatem doloribus totam unde autem fugit facilis distinctio.
+</div>
+
+<div class="flex flex-row justify-around mt-20">
+    <canvas id="Chart1" style="width:40%;max-width:400px; height: 100px;"></canvas>
+    <canvas id="Chart2" style="width:40%;max-width:400px; height: 100px;"></canvas>
+</div>
+
+<script>
+var xValues = ["Actual Word Count", "Summarized Word Count"];
+var yValues = [55, 45];
+var barColors = ["green","orange"];
+
+new Chart("Chart1", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+    //   label:['Plot'],
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {
+        display: false,
+    },
+    title: {
+      display: true,
+      text: "Word Count Before & After"
+    },
+    // scales: {
+    //         yAxes: [{
+    //             ticks: {
+    //                 beginAtZero: true
+    //             }
+    //         }],
+    //         xAxes: [{
+    //         	barPercentage: 0.2
+    //         }]
+    //     }
+    // }
+  }
+});
+
+xValues = ["Actual Character Count", "Summarized Character Count"];
+yValues = [55, 15];
+barColors = ["green","orange"];
+
+new Chart("Chart2", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Character Count Before & After"
+    },
+    // scales: {
+    //         yAxes: [{
+    //             ticks: {
+    //                 beginAtZero: true
+    //             }
+    //         }],
+    //         xAxes: [{
+    //         	barPercentage: 0.2
+    //         }]
+    //     }
+    // }
+  }
+});
+</script>
+
+
+{% endblock %}
