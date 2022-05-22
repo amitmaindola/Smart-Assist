@@ -5,22 +5,22 @@
 <!-- <p>File uploaded successfully</p>
 <p>File Name: {{name}}</p> -->
 
-<div id="actual">
+<div data-aos="fade-up" id="actual">
   <h1 class="text-2xl my-10 font-semibold text-center">Here Is The Complete Text</h1>
   <div class="summary ">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat explicabo quaerat totam earum dolorum sunt ipsum iusto, magni dolor impedit, minima recusandae! Sed deserunt consectetur ut ab rerum quam ullam? Quis ad possimus aperiam dolorum iusto nobis repellat qui iste assumenda, sapiente, exercitationem cum eos, molestiae blanditiis ducimus eius delectus adipisci. Vel ipsam a quo excepturi, porro nesciunt voluptate aliquid ipsum ea iure optio corporis tenetur accusamus voluptates delectus ducimus quas sunt voluptatum fugiat autem! Consectetur nulla illum voluptatem architecto cum corporis quisquam, nam omnis, consequatur nemo quaerat tempore dolorum labore molestiae, aliquam eius ab dolores minima debitis distinctio quas. Excepturi debitis dicta eos unde quas illum, quos labore sint optio iure. Molestiae velit nemo, harum cumque dolorum id rerum totam voluptatum! Officia possimus asperiores, illum fuga vitae voluptatem nam tenetur, quidem nemo provident, nisi id. Dolores libero perspiciatis enim sit natus commodi non ipsa deleniti reprehenderit molestias, totam, dolore ipsum similique! Nobis quam quisquam eum nisi error ad minus commodi, hic optio itaque odio cupiditate accusantium veritatis reprehenderit beatae culpa. Totam molestiae magni, est aliquam maiores explicabo quas soluta earum? Eius iusto doloremque, iure recusandae inventore facere aliquam libero sequi debitis accusamus laboriosam amet. Quae quibusdam debitis impedit expedita. Voluptatem dolorem officia est voluptatibus iste accusantium quas. Velit in blanditiis quasi modi accusamus. Cupiditate eaque accusantium possimus delectus hic voluptatibus quae saepe unde vero corrupti repellat ducimus voluptas, eum molestiae sed quos at facere magni quo nesciunt porro similique expedita culpa nihil. Aut explicabo corrupti beatae suscipit quod. Dicta vero non esse totam consequatur provident neque excepturi dolor, expedita veniam sit ullam quas blanditiis corrupti porro commodi. Repellendus harum laborum corporis quos, aliquid maxime ea optio neque facere in quo. Perspiciatis doloribus placeat laudantium in delectus quidem, enim, voluptatibus temporibus sunt saepe nihil ut. Laboriosam consequuntur quia magni voluptas sed autem adipisci vitae velit ut! Sint repudiandae hic voluptate obcaecati velit ex repellat laudantium at ullam! Natus, qui. Veniam in fugiat nisi. Esse amet illo officia sit harum nobis impedit. Consequuntur omnis voluptates voluptatum necessitatibus officiis ab rem reprehenderit nobis ratione neque temporibus nostrum vero accusantium ea laboriosam, a iure, itaque impedit. Modi porro recusandae, hic molestiae quis quisquam! Vero, sequi. Quod veniam modi iste! Modi magni unde mollitia fuga facilis? Praesentium iste natus doloremque ut perferendis blanditiis iure nisi omnis, corporis obcaecati? Aliquam temporibus sapiente ipsam. Laborum veritatis voluptatem adipisci? Nam hic veritatis quod praesentium modi eligendi ad quae minima laborum alias itaque nostrum temporibus provident voluptatum expedita, aliquid fugit sed similique ab qui rerum asperiores quibusdam. Omnis maxime animi, sit impedit atque quam natus, magni aliquid nam voluptatibus ipsam cumque fugit accusantium, quod dolores libero laborum. Similique consequuntur soluta magni asperiores iusto aliquid molestias minima nostrum doloribus fugit eum eaque quidem ullam quo corrupti maiores, voluptatem tempora totam dolorum. Quidem, odio velit atque facilis cupiditate delectus nesciunt ipsam enim aliquam cumque a recusandae dolorem, suscipit, quasi assumenda fuga at id neque. Cum quasi voluptatum quia expedita veniam maiores doloremque at provident repellendus? Natus eligendi voluptatem labore?
+    {{actualText}}
   </div>
 </div>
 
-<div id="summary">
+<div data-aos="fade-up" id="summary">
   <h1 class="text-2xl my-10 font-semibold text-center">Here Is The Summary</h1>
 <div class="summary ">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, rerum accusamus sapiente nesciunt expedita quae tempore voluptas velit modi sint magnam accusantium fugiat molestiae, perferendis, non reiciendis doloremque ut voluptates beatae quos quas. Pariatur, consectetur! Ut sint inventore explicabo non, aspernatur nihil, adipisci ducimus a voluptates, expedita natus totam eos maxime distinctio omnis accusamus excepturi. Labore impedit deserunt assumenda maxime fugit saepe. Laboriosam, cupiditate quam assumenda deleniti debitis illo accusamus quisquam voluptatibus animi neque dolorem voluptas ipsa ipsam numquam iusto consequatur maxime. Praesentium consequuntur quas officiis illo, quam debitis explicabo aut eos voluptatem doloribus totam unde autem fugit facilis distinctio.
+  {{summary_text}}
 </div>
 
 <div class="flex flex-row justify-around mt-20">
-    <canvas id="Chart1" style="width:40%;max-width:400px; height: 100px; background-color: white;padding: 20px; border-radius: 20px 0px 20px 0px;"></canvas>
-    <canvas id="Chart2" style="width:40%;max-width:400px; height: 100px; background-color: white;padding: 20px; border-radius: 20px 0px 20px 0px;"></canvas>
+    <canvas data-aos="zoom-in-right" id="Chart1" style="width:40%;max-width:400px; height: 100px; background-color: white;padding: 20px; border-radius: 20px 0px 20px 0px;"></canvas>
+    <canvas data-aos="zoom-in-left" id="Chart2" style="width:40%;max-width:400px; height: 100px; background-color: white;padding: 20px; border-radius: 20px 0px 20px 0px;"></canvas>
 </div>
 
 <script>
@@ -98,23 +98,15 @@ new Chart("Chart2", {
 
 <div id="questions">
   <h1 class="text-2xl my-10 font-semibold text-center">Here Are Some Questions</h1>
+  {% for item in questions_data %}
   <div class="mb-10">
-    <h3 class="que"><b>Question:</b> What is an algae?</h3>
-    <h4 class="ans"><b>Answer:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque maxime corrupti in rem obcaecati inventore natus facere? Est error totam sint modi earum animi nulla illo veniam at quibusdam.</h4>
+    <h3 data-aos="fade-up"  class="que"><b>Question:</b> {{item['question']}}</h3>
+    <h4 data-aos="fade-up" class="ans"><b>Answer:</b> {{item['answer']}} </h4>
   </div>
-
-  <div class="mb-10">
-    <h3 class="que"><b>Question:</b> What is an algae?</h3>
-    <h4 class="ans"><b>Answer:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque maxime corrupti in rem obcaecati inventore natus facere? Est error totam sint modi earum animi nulla illo veniam at quibusdam.</h4>
-  </div>
-
-  <div class="mb-10">
-    <h3 class="que"><b>Question:</b> What is an algae?</h3>
-    <h4 class="ans"><b>Answer:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque maxime corrupti in rem obcaecati inventore natus facere? Est error totam sint modi earum animi nulla illo veniam at quibusdam.</h4>
-  </div>
+  {% endfor %}
 </div>
 
-<div id="questions">
+<div id="dates">
   <h1 class="text-2xl my-10 font-semibold text-center">Here Are Some Important Dates With Events</h1>
   <table style="margin: auto; max-width: 800px; width: 80%;">
     <tr>

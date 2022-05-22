@@ -25,10 +25,15 @@ def audio_to_text(path):
 
 
 #text_to_summarizer
-def text_summary():
+def text_summary(text):
     summarizer = pipeline("summarization", model="t5-base", tokenizer="t5-base", framework="tf")
-    summary_text = summarizer(text, max_length=100, min_length=5, do_sample=False)[0]['summary_text']
+    summary_text = summarizer(text, max_length=text.length//2, min_length=5, do_sample=False)[0]['summary_text']
     print(summary_text)
 
+
 video_to_audio("video.mp4")
-audio_to_text("demo.wav")
+text=audio_to_text("demo.wav")
+
+text = "People celebrate Holi with utmost fervour and enthusiasm, especially in North India. One day before Holi, people conduct a ritual called Holika Dahan. In this ritual, people pile heaps of wood in public areas to burn. It symbolizes the burning of evil powers revising the story of Holika and King Hiranyakashyap. Furthermore, they gather around the Holika to seek blessings and offer their devotion to God."
+
+text_summary(text)
