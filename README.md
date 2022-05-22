@@ -1,5 +1,5 @@
 
-# Smart-Assist![Screenshot 2022-05-23 at 3 21 47 AM](https://user-images.githubusercontent.com/79039452/169717551-f651ee7c-97d0-40d8-b970-49fa0f008dbc.png)
+# Smart-Assist
 
 This is the github repositry of a website made by Team Hufflepuffs(group of students of IIT Mandi) for the event frosthack in the technical fest of IIT Mandi XPECTO'22.
 This website is based on the theme education and is particulary for student's use.
