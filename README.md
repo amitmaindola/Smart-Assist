@@ -16,7 +16,7 @@ This summary is processed by using natural language processing and deep learning
 1. NLP - Natural Language Processing for various features
 2. Flask - Backend
 3. Tensorflow and Pytorch - Libraries to implement NLP
-4. TML, CSS, JavaScript - Frontend
+4. HTML, CSS, JavaScript - Frontend
 
 # Working
 1. First you have to clone the repository.
