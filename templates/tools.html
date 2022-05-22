@@ -1,16 +1,26 @@
-<h1 class="text-2xl my-10 font-semibold text-center">Here Is The Complete Text</h1>
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h1 class="text-2xl my-10 font-semibold text-center">Tools We Have Now!</h1>
 
 <div class="flex flex-row justify-around">
-    <a style="max-width: 400px;" href="/graph">
+    <a style="max-width: 500px; border: 2px solid white; border-radius: 20px; padding: 10px;" href="/graph">
         <div class="graph">
+            <img class="text-center"src="/static/images/graph.png" style="width: 100%; height: 200px;" alt="">
             <h1 class="text-xl my-10 font-semibold text-center">Graph Plotter</h1>
             <h class="text-lg text-white">Just Enter The Functions And Get The Plots Ready.<br>Generates Multiple Plots Simultaneously.</h>
         </div>
     </a>
-    <a style="max-width: 400px;" href="/calculator">
+    <a style="max-width: 500px; border: 2px solid white; border-radius: 20px; padding: 10px;" href="/calculator">
         <div class="calc">
+            <img class="text-center"src="/static/images/calculator.png" style="width: 100%; height: 200px;" alt="">
             <h1 class="text-xl my-10 font-semibold text-center">Scientific Calculator</h1>
             <h class="text-lg text-white">A Scientific Calculator For Saving Your Time<br>Trigonometric And Logarithmic Functions.</h>
         </div>
     </a>
 </div>
+
+
+{% endblock %}
