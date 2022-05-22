@@ -19,19 +19,6 @@ This summary is processed by using natural language processing and deep learning
 3. Tensorflow and Pytorch - Libraries to implement NLP
 4. TML, CSS, JavaScript - Frontend
 
-# Landing Page :
-![Screenshot 2022-05-23 at 2 00 29 AM](https://user-images.githubusercontent.com/79039452/169714623-b1be991f-6bbd-4216-b599-88567106d37d.png)
-# Video/Text/Audio uploading page:
-![Screenshot 2022-05-23 at 2 01 02 AM](https://user-images.githubusercontent.com/79039452/169714646-c5fd62c2-47ab-4261-bd9a-07a34be6ee3d.png)
-# Summarization Result:
-![Screenshot 2022-05-23 at 1 59 56 AM](https://user-images.githubusercontent.com/79039452/169714606-77cc344d-7651-4502-af7d-0b5e5bb0c97e.png)
-# Question Answer Generation:
-![Screenshot 2022-05-23 at 2 20 05 AM](https://user-images.githubusercontent.com/79039452/169715275-8cffede3-4d8f-4f0d-bb99-ed1e3897f1fe.png)
-# Important Tools:
-![Screenshot 2022-05-23 at 2 02 09 AM](https://user-images.githubusercontent.com/79039452/169714676-15c67781-a97e-4a7e-866a-92748615fea9.png)
-# About
-![Screenshot 2022-05-23 at 2 02 58 AM](https://user-images.githubusercontent.com/79039452/169714704-547ddf49-673e-46fc-b519-3814ff15a4f9.png)
-
 # Working
 1. First you have to clone the repository.
 2. If you don't have a virtual environment then run the command `pip install virtualenv`.
@@ -44,3 +31,16 @@ This summary is processed by using natural language processing and deep learning
 
 # Video Demo
 https://youtu.be/t4hJB6XJ4sY
+
+# Landing Page :
+![Screenshot 2022-05-23 at 2 00 29 AM](https://user-images.githubusercontent.com/79039452/169714623-b1be991f-6bbd-4216-b599-88567106d37d.png)
+# Video/Text/Audio uploading page:
+![Screenshot 2022-05-23 at 2 01 02 AM](https://user-images.githubusercontent.com/79039452/169714646-c5fd62c2-47ab-4261-bd9a-07a34be6ee3d.png)
+# Summarization Result:
+![Screenshot 2022-05-23 at 1 59 56 AM](https://user-images.githubusercontent.com/79039452/169714606-77cc344d-7651-4502-af7d-0b5e5bb0c97e.png)
+# Question Answer Generation:
+![Screenshot 2022-05-23 at 2 20 05 AM](https://user-images.githubusercontent.com/79039452/169715275-8cffede3-4d8f-4f0d-bb99-ed1e3897f1fe.png)
+# Important Tools:
+![Screenshot 2022-05-23 at 2 02 09 AM](https://user-images.githubusercontent.com/79039452/169714676-15c67781-a97e-4a7e-866a-92748615fea9.png)
+# About
+![Screenshot 2022-05-23 at 2 02 58 AM](https://user-images.githubusercontent.com/79039452/169714704-547ddf49-673e-46fc-b519-3814ff15a4f9.png)
