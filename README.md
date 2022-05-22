@@ -24,3 +24,5 @@ This summary is processed by using natural language processing and deep learning
 5. Now to run the website go inside the smart assist directory and type `python app.py`.
 6. Now the website will start running locally and bingo u can enjoy the various features of the website.
 
+# Video Demo
+https://youtu.be/t4hJB6XJ4sY
