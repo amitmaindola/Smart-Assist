@@ -13,3 +13,12 @@ This summary is processed by using natural language processing and deep learning
 ![Screenshot 2022-05-23 at 2 02 09 AM](https://user-images.githubusercontent.com/79039452/169714676-15c67781-a97e-4a7e-866a-92748615fea9.png)
 # About
 ![Screenshot 2022-05-23 at 2 02 58 AM](https://user-images.githubusercontent.com/79039452/169714704-547ddf49-673e-46fc-b519-3814ff15a4f9.png)
+
+# Working
+1)First you have to clone the repository
+2)Next use the “pip install requirements.txt” command or “pip3 install requirements.txt” to install all the libraries and dependencies
+3)Now write the commands “pip install transformers==3.0.0” ,” pip install nltk” and “pip install nlp “.
+4)After installing nltk do python -m nltk.downloader punkt
+5)Now to run the website go inside the smart assist directory and type “python app.py”.
+6)Now the website will start running locally and bingo u can enjoy the various features of the website.
+
