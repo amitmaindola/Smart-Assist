@@ -1,0 +1,32 @@
+!pip install transformers=="3.4.0"
+!pip install speechRecognition
+!pip install sentencePiece
+!pip install pytorch
+
+from transformers import pipeline
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+#from matplotlib.pyplot 
+import textimport moviepy.editor
+import speech_recognition as sr
+path = '/content/The danger of silence | Clint Smith.mp4'
+video = moviepy.editor.VideoFileClip(path)
+aud = video.audio
+aud.write_audiofile("demo.wav")
+print("--End--")
+text=''
+r=sr.Recognizer()
+with sr.AudioFile("demo.wav") as source:
+    audio_data = r.record(source)
+    text = r.recognize_google(audio_data)
+    print(text)
+# print(len(text.split()))
+p=len(text)
+print(len(text))
+from transformers import pipeline
+import os
+import torch
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+summarizer = pipeline("summarization")
+summary_text = summarizer(text, max_length=p//2, min_length=5, do_sample=False)[0]['summary_text']
+print(summary_text)
