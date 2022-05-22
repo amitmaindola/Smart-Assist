@@ -50,7 +50,7 @@ def keyword_generator(text,range, top_n):
 
 @app.route("/")
 def landing():
-    return render_template('home.html', text="Akshar Betichod")
+    return render_template('home.html')
 
 @app.route("/home", methods = ['GET'])
 def home():
@@ -104,7 +104,7 @@ def graph():
     return render_template('graph.html')
 
 @app.route("/calculator", methods=['GET'])
-def graph():
+def calculator():
     return render_template('calculator.html')
 
 if __name__ == "__main__":
