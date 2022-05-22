@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab&display=swap');
 html{
-    color: rgb(184, 240, 237);
-    background-color: rgb(18, 4, 46);
+    color: wheat;
+    background-color: rgb(28, 26, 31);
 }
 
 html body{
-    background-color: rgb(12, 4, 32)!important;
+    background-color: rgb(27, 26, 30)!important;
 }
 
 html, div, p, body, h1, h2, h3, h4, h5, h6, *{
@@ -31,7 +31,7 @@ th, tr, td{
     text-align: center;
 }
 #sidebar{
-    background-color: rgb(40, 40, 70);
+    background-color: rgb(24, 24, 31);
     color: white;
 }
 
@@ -68,7 +68,7 @@ th, tr, td{
 }
 
 .wrapper textarea{
-    border: 3px ridge rgb(2, 6, 58);
+    border: 3px ridge rgb(25, 26, 32);
     margin-bottom: 5px;
 }
 ul{
@@ -80,12 +80,12 @@ ul h1{
 }
 
 form i{
-    color: rgb(2, 6, 58);
+    color: rgb(25, 25, 29);
 }
 
 .form input[type=submit]{
     color: white;
-    background-color: rgb(2, 6, 58);
+    background-color: rgb(25, 26, 31);
     cursor: pointer;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -108,7 +108,7 @@ form i{
 }
 
 .summary{
-    border: 3px ridge wheat;
+    border: 3px ridge whitesmoke;
     padding: 20px;
     border-radius: 30px 0px 30px 0px;
     -webkit-border-radius: 30px 0px 30px 0px;
@@ -117,4 +117,7 @@ form i{
     -o-border-radius: 30px 0px 30px 0px;
 }
 
-
+.graph{
+    align-items: center;
+    text-align: center;
+}

@@ -103,6 +103,11 @@ def summary():
 def graph():
     return render_template('graph.html')
 
+
+@app.route("/tool", methods=['GET'])
+def tool():
+    return render_template('tools.html')
+
 @app.route("/calculator", methods=['GET'])
 def calculator():
     return render_template('calculator.html')
