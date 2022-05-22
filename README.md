@@ -9,6 +9,8 @@ This summary is processed by using natural language processing and deep learning
 ![Screenshot 2022-05-23 at 2 01 02 AM](https://user-images.githubusercontent.com/79039452/169714646-c5fd62c2-47ab-4261-bd9a-07a34be6ee3d.png)
 # Summarization Result:
 ![Screenshot 2022-05-23 at 1 59 56 AM](https://user-images.githubusercontent.com/79039452/169714606-77cc344d-7651-4502-af7d-0b5e5bb0c97e.png)
+# Question Answer Generation:
+![Screenshot 2022-05-23 at 2 20 05 AM](https://user-images.githubusercontent.com/79039452/169715275-8cffede3-4d8f-4f0d-bb99-ed1e3897f1fe.png)
 # Important Tools:
 ![Screenshot 2022-05-23 at 2 02 09 AM](https://user-images.githubusercontent.com/79039452/169714676-15c67781-a97e-4a7e-866a-92748615fea9.png)
 # About
