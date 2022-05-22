@@ -38,7 +38,7 @@ Watch the video at 1.25 or 1.5x for better experience :-)
 # Video/Text/Audio uploading page:
 ![Screenshot 2022-05-23 at 2 01 02 AM](https://user-images.githubusercontent.com/79039452/169714646-c5fd62c2-47ab-4261-bd9a-07a34be6ee3d.png)
 # Summarization Result:
-![Screenshot 2022-05-23 at 1 59 56 AM](https://user-images.githubusercontent.com/79039452/169714606-77cc344d-7651-4502-af7d-0b5e5bb0c97e.png)
+![Screenshot 2022-05-23 at 3 36 49 AM](https://user-images.githubusercontent.com/79039452/169718042-1b5a0632-a7e7-43c1-97d2-37ddd9a62766.png)
 # Question Answer Generation:
 ![Screenshot 2022-05-23 at 2 20 05 AM](https://user-images.githubusercontent.com/79039452/169715275-8cffede3-4d8f-4f0d-bb99-ed1e3897f1fe.png)
 # Important Tools:
