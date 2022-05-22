@@ -29,7 +29,9 @@ This summary is processed by using natural language processing and deep learning
 8. Now the website will start running locally and bingo u can enjoy the various features of the website.
 
 # Video Demo
-https://youtu.be/t4hJB6XJ4sY
+https://youtu.be/t4hJB6XJ4sY 
+
+Watch the video at 1.25 or 1.5x for better experience :-)
 
 # Landing Page :
 ![Screenshot 2022-05-23 at 2 00 29 AM](https://user-images.githubusercontent.com/79039452/169714623-b1be991f-6bbd-4216-b599-88567106d37d.png)
