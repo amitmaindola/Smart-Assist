@@ -54,7 +54,7 @@ def keyword_generator(text,range, top_n):
 
 @app.route("/")
 def landing():
-    return render_template('home.html', text="Akshar Betichod")
+    return render_template('home.html', text="")
 
 @app.route("/home", methods = ['GET'])
 def home():

@@ -6,9 +6,11 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: black;
+}
 .background {
-	height: 2000px;
+	/* height: 2000px; */
 	background: black;
     width: 99.3vw;
     position: absolute;
@@ -58,15 +60,16 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 .header{
     position: fixed;
     width: 100%;
-    top: 10px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .logo{
     height: 150px;
-    transform: translate(-30px, -55px);
-    -webkit-transform: translate(-30px, -55px);
-    -moz-transform: translate(-30px, -55px);
-    -ms-transform: translate(-30px, -55px);
-    -o-transform: translate(-30px, -55px);
+    transform: translate(-30px, -75px);
+    -webkit-transform: translate(-30px, -75px);
+    -moz-transform: translate(-30px, -75px);
+    -ms-transform: translate(-30px, -75px);
+    -o-transform: translate(-30px, -75px);
 }
 .btn{
     font-size: 18px;
@@ -96,6 +99,7 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 
 .links{
     width: 300px;
+    transform: translateY(-20px);
 }
 .links a{
     /* border: 2px solid white; */
@@ -121,15 +125,16 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
     
 }
 #ourteam{
-    background-color: rgb(40,40,40);
+    background-color: black;
 }
  /* Footer Team */
 .container {
     font-family: 'Lato', sans-serif;
-    margin:auto;
-    margin-top: 200px;
+    margin:0px;
+    padding-top: 20px;
     text-align: center;
-    padding: 3%;
+    background-color: black;
+    margin-right: 0px;
 }
 .header {
     font-family: 'Lato', sans-serif;
@@ -141,12 +146,13 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 .profile-img{
     font-family: 'Lato', sans-serif;
     margin: auto;
+    border-radius: 100px;
 }
 
 .sub-container {
     font-family: 'Lato', sans-serif;
-    max-width: 1200px;
-    margin: auto;
+    width : 100%;
+    margin: 0px 50px;
     padding: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -154,19 +160,23 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 }
 
 .teams {
+    background-color: whitesmoke;
     font-family: 'Lato', sans-serif;
-    margin: 10px;
+    margin: 40px;
     padding: 22px;
     max-width: 30%;
     cursor: pointer;
     transition: 0.4s;
     box-sizing: border-box;
+    border-radius: 12px;
 }
 .social-links {
+    text-align: center;
     margin: 14px;
 }
 
 .social-links a {
+
     display: inline-block;
     height: 30px;
     width: 30px;
@@ -181,7 +191,8 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
     color: black;
 }
 .teams:hover {
-    background: wheat;
+    /* background: rgba(220, 220, 220, 0.396); */
+    transform: scale(1.05);
     border-radius: 12px;
     
 }
@@ -192,24 +203,31 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 }
 
 .name {
-    color: white;
+    color:  rgb(40,40,40);
     padding: 12px;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .desig {
-    color: white;
+    text-align: center;
+    color:  rgb(40,40,40);
     font-style: italic;
 }
 
 .about {
-    color: white;
+    color:  rgb(40,40,40);
     margin: 20px 0;
     font-weight: lighter;
 }
-
+footer{
+    background-color: rgb(40,40,40);
+    padding: 2%;
+    margin-bottom: 0px;
+    
+}
 
 
 @media screen and (max-width: 600px) {
