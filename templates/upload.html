@@ -17,12 +17,14 @@
 <!-- <div id="text">Hello</div> -->
 
 <div class="wrapper mt-10 flex flex-row justify-between">
-    <div class="form-outline flex-grow flex flex-col justify-between bg-white" style="width: 20%;">
-        <textarea id="text" style="width: 100%; resize: none;"  class="form-control max-10 flex-grow text-black" name="" id="textAreaExample1"></textarea>
-        <div class="form flex flex-col justify-between">
-           <form action="/summary" method="POST">
-                <input type="hidden" name="type" value="text">
-                <input style="width: 100%;" type = "submit" value="Submit">
+    <div class="form-outline flex-grow bg-white" style="width: 20%;">
+        <div class="form " style="height: 100%;">
+            <form action="/home" class="" method="POST" style="height: 100%;">
+               <textarea id="text" style="width: 100%; height: 90%; resize: none;"  class="form-control max-10 flex-grow text-black" name="inputText" id="textAreaExample1"></textarea>
+                <div class="flex-grow-0">
+                    <input type="hidden" name="type" value="text">
+                    <input style="width: 100%;" type = "submit" value="Submit">
+                </div>
            </form>
         </div>
     </div>
@@ -43,7 +45,7 @@
             <div class="form flex flex-col justify-between">
                 <h3>Upload Audio File</h3>
                 <input type="file" name="file" />
-                <input type="hidden" name="type" value="video">
+                <input type="hidden" name="type" value="audio">
                 <br>
                 <input type = "submit" value="Upload">
             </div>

@@ -306,7 +306,7 @@ SUPPORTED_TASKS = {
     }
 }
 
-def pipeline(
+def pipeline1(
     task: str,
     model: Optional = None,
     tokenizer: Optional[Union[str, PreTrainedTokenizer]] = None,
