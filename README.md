@@ -16,9 +16,9 @@ This summary is processed by using natural language processing and deep learning
 
 # Working
 1. First you have to clone the repository.
-2. Next use the “pip install requirements.txt” command or “pip3 install requirements.txt” to install all the libraries and dependencies
-3. Now write the commands “pip install transformers==3.0.0” ,” pip install nltk” and “pip install nlp “.
-4. After installing nltk do python -m nltk.downloader punkt
-5. Now to run the website go inside the smart assist directory and type “python app.py”.
+2. Next use the `pip install requirements.txt` command or `pip3 install requirements.txt` to install all the libraries and dependencies
+3. Now write the commands `pip install transformers==3.0.0` ,`pip install nltk` and `pip install nlp`.
+4. After installing nltk do `python -m nltk.downloader punkt`
+5. Now to run the website go inside the smart assist directory and type `python app.py`.
 6. Now the website will start running locally and bingo u can enjoy the various features of the website.
 
