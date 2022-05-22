@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <link rel="stylesheet" href="/static/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background">
@@ -29,6 +32,7 @@
         <div class="links flex flex-row justify-between text-white text-xl cursor-alias" >
             <a href="#">Home</a>
             <a href="#about">About</a>
+            <a href="#ourteam">Our Team</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -42,18 +46,18 @@
                 <b class="font-medium" id="text"></b>
                 <span id="span">_</span>
             </div>
-            <a class="btn text-white mb-5 " href="/home"  >Get Started</a>
+            <a class="btn text-white mb-5 " href="/home" >Get Started</a>
         </div>
     </div>
 
-    <div id="about" class="text-white pt-20 px-40">
-        <h1 class="text-3xl text-white about1 mb-5">About</h1>
+    <div id="about" class="text-black pt-20 px-40">
+        <h1 class="text-3xl text-black about1 mb-5">About</h1>
         <h2 class="text-2xl ">Smart Assist is a Machine Learning based web application which helps students by providing some useful insights from long video, audio and text files. This websitess also provides mock test based on the given lecture text files. Finding important points and keywords from the paragraph.
             This application also provides various maathematical and scientific tools to assist the students. You must have encountered the problem of studying long chapters which are quite boring to read this apps provides a short summary of a whole chapter which can be useful at the time of revision as well.
         </h2>
     </div>
     <!-- Team Page -->
-    <div class="container">
+    <div class="container" id = "ourteam">
             <h1 class = "text-white text-2xl">Our Team</h1>
         <div class="sub-container">
             <div class="teams">
@@ -104,7 +108,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/basicscroll/2.0.0/basicScroll.min.js" integrity="sha512-gp6kz4bToO0kmDMCbyDEV/9/pljTYdkBldJMjC6ASLoTt6ShtQ8bGU7qVUZiNQUDDoVi8GL3vDcTUVnLxF9NoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/static/home.js"></script>
