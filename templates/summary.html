@@ -106,6 +106,18 @@ new Chart("Chart2", {
   {% endfor %}
 </div>
 
+
+<div id="dates">
+  <h1 class="text-2xl my-10 font-semibold text-center">Keywords used in the file.</h1>
+  {% for items in keywords %}
+  {% for item in items %}
+  <div class="mb-10 flex flex-row justify-between flex-wrap">
+    <div class="text-xl" style="background-color: darkmagenta; padding: 5px 10px; border-radius: 20px;"><a href="https://www.dictionary.com/browse/{{item}}">{{item}}</a></div>
+  </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+
 <div id="dates">
   <h1 class="text-2xl my-10 font-semibold text-center">Here Are Some Important Dates With Events</h1>
   <table style="margin: auto; max-width: 800px; width: 80%;">

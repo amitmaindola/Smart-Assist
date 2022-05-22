@@ -6,12 +6,14 @@ import moviepy.editor
 from question_answer.question_generator import generate_questions
 import speech_recognition as sr
 import os
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+
 
 
 app = Flask(__name__)
 
-path = 'video.mp4'
-video = moviepy.editor.VideoFileClip(path)
 #video_to_audio
 
 def video_to_audio(path):
@@ -36,6 +38,19 @@ def text_summary(text):
     summary_text = summarizer(text, max_length=text.length//2, min_length=5, do_sample=False)[0]['summary_text']
     print(summary_text)
 
+# Keywords Finder
+def keyword_generator(text,range, top_n):
+    n_gram_range = (1, range)
+    stop_words = "english"
+    count = CountVectorizer(ngram_range=n_gram_range, stop_words=stop_words).fit([text])
+    candidates = count.get_feature_names_out()
+    model = SentenceTransformer('distilbert-base-nli-mean-tokens')
+    doc_embedding = model.encode([text])
+    candidate_embeddings = model.encode(candidates)
+    distances = cosine_similarity(doc_embedding, candidate_embeddings)
+    keywords = [candidates[index] for index in distances.argsort()[0][-top_n:]]
+    print(keywords)
+    return keywords
 
 @app.route("/")
 def landing():
@@ -48,21 +63,33 @@ def home():
 @app.route('/home', methods = ['POST'])
 def success():
     if request.method == 'POST':
-        f = request.files['file']
-        f.save(f.filename)
-        path = f.filename
-        video = moviepy.editor.VideoFileClip(path)
-        video_to_audio(path)
-        text = audio_to_text("demo.wav")
+        fileType = request.form.get('type')
+        if(fileType=="audio" or fileType=="video"):
+            f = request.files['file']
+            if(fileType=="video"):
+                f.save(f.filename)
+                path = f.filename
+                video = moviepy.editor.VideoFileClip(path)
+                video_to_audio(path)
+            else:
+                f.save("demo.wav")
+            text = audio_to_text("demo.wav")
         # # summary_text = text_summary(text)
+        else:
+            text = request.form.get("inputText")
         summary_text = "This is summary"
-        text = "People celebrate Holi with utmost fervour and enthusiasm, especially in North India. One day before Holi, people conduct a ritual called Holika Dahan. In this ritual, people pile heaps of wood in public areas to burn. It symbolizes the burning of evil powers revising the story of Holika and King Hiranyakashyap. Furthermore, they gather around the Holika to seek blessings and offer their devotion to God."
+        # Generating Questions
         questions_data = generate_questions(text)
         print(questions_data)
         for item in questions_data:
             item['question']=item['question'].replace("<pad>", "")
             item['answer']=item['answer'].replace("<pad>", "")
-        return render_template('summary.html', actualText = text, summary_text = summary_text, questions_data = questions_data)
+        # Generating Keywords
+        keywords=[]
+        keywords.append(keyword_generator(text, 1, 5))
+        keywords.append(keyword_generator(text, 2, 3))
+        keywords.append(keyword_generator(text, 3, 1))
+        return render_template('summary.html', actualText = text, summary_text = summary_text, questions_data = questions_data, keywords = keywords)
 
 @app.route("/summary", methods = ['GET'])
 def summary():
