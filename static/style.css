@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab&display=swap');
 html{
     color: rgb(184, 240, 237);
-    background-color: black;
+    background-color: rgb(18, 4, 46);
 }
+
 html body{
     background-color: rgb(12, 4, 32)!important;
 }
@@ -12,6 +13,23 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
     margin: 0;
 }
 
+
+
+#questions{
+    padding-top: 40px;
+}
+
+#summary, #questions{
+    padding-right: 40px;
+}
+#questions b{
+    color: wheat;
+}
+
+th, tr, td{
+    border: 2px solid white;
+    text-align: center;
+}
 #sidebar{
     background-color: rgb(40, 40, 70);
     color: white;

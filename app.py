@@ -1,6 +1,8 @@
 from crypt import methods
 from operator import truediv
 from flask import *
+from transformers import pipeline
+
 
 app = Flask(__name__)
 

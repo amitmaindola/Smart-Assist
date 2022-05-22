@@ -112,3 +112,12 @@ html, div, p, body, h1, h2, h3, h4, h5, h6, *{
 /* .links a:hover{
     background-color: transparent;
 } */
+
+.underline-topic{
+    border-bottom: 2px ridge white;
+    color: wheat;
+    width: 120px;
+}
+
+#about{
+}
