@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+ <header style="display: none;">
+    <div class="tab" id="home">Home</div>
+    <div class="tab" id="about">About</div>
+  </header>
+<h1 class="text-2xl my-10 font-semibold text-center">Graph Plotter</h1>
+  
+  <div class="calculator home-page plotter mt-5">
+    <canvas height="600" width="600" id="canvas"></canvas>
+    <div class="controls">
+      <div class="navigator" style="display: none;">
+        <div class="function-nav">Functions</div>
+        <div class="table-nav">Table</div>
+        <div class="calculate-nav">Calculate</div>
+      </div>
+      <div class="tabs mt-20">
+        <div class="function-tab">
+          <h2>Functions</h2>
+          <div class="functions">
+            <div id="function-template" class="text-black">
+              y = <input type="text">
+              <select>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="grey">Grey</option>
+              </select>
+              <span class="delete">x</span>
+            </div>
+          </div>
+          <button class="add-function">Add Function</button>
+          <div class="window">
+            <h2>Window</h2>
+            <input type="text" placeholder="xMin" name="x-min">≤ x ≤<input type="text" placeholder="xMax" name="x-max"><br>
+            <input type="text" placeholder="yMin" name="y-min">≤ y ≤<input type="text" placeholder="yMax" name="y-max"><br>
+            xScale: <input style="color: black;" type="text" name="x-scale"><br>
+            yScale: <input style="color: black;" type="text" name="y-scale"><br>
+            <button class="clear-window">Clear</button>
+            <button class="reset-window">Reset Default</button>
+          </div>
+        </div>
+        <div class="table-tab">
+          <h2>Table</h2>
+          <div>Move the graph around to update the table!</div>
+          <div style="overflow-x: scroll; width: 300px;"><table></table></div>
+        </div>
+        <div class="calculate-tab">
+          <div class="warning"></div>
+          <div class="roots">
+            <h2>Roots</h2>
+            <p>Calculate the x-intercept of a graph</p>
+            Graph: <select class="function-list" name="expression"></select><br>
+            Guess: <input type="text" placeholder="x" name="guess"><br>
+            <button>Calculate</button>
+            <div class="root-output"></div>
+          </div>
+          <div class="intersections">
+            <h2>Intersections</h2>
+            <p>Calculate the intersections of two graphs</p>
+            Graphs: <select class="function-list" name="expression1"></select><select class="function-list" name="expression2"></select><br>
+            Guess: <input type="text" placeholder="x" name="guess"><br><br>
+            <div></div>
+            <button>Calculate</button>
+            <div class="intersection-output"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-page">
+    <h1>About</h1>
+    <p>This is a graphing calculator created using mainly JavaScript, meant to share similar functions to the TI-84 calculator. This graphing calculator graph any polynomial, logarithmic, trigonometric, and exponential function. Additionally, it can calculate the roots and intercepts of the functions off of an inital guess. This webpage uses webpack for organisation, and a library called <a href="https://www.npmjs.com/package/expr-eval">expr-eval</a>. For more details, read the README.md on the <a href="https://github.com/AaronHe7/graphing-calculator/" target="blank">Github page</a>.</p>
+    <h2>Example</h2>
+    <div>Function: y = x^2 - x - 10</div>
+    <img alt="x^2-x-10" src="img/f1.png" height="400">
+    <p> Using the root section of the "calculate" tab, we can calculate the roots. Using an inital guess of -3, we can get the approximation for the negative root, which is -2.70156. To calculate the positive root, we can instead use an inital guess of 4, outputting 3.70156. These are very close to the exact roots, (1±√41)/2.
+  </div>
+
+{% endblock %}

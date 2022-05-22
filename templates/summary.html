@@ -25,7 +25,7 @@
 
 <script>
 var xValues = ["Actual Word Count", "Summarized Word Count"];
-var yValues = [55, 45];
+var yValues = [{{w1}}, {{w2}}];
 var barColors = ["green","orange"];
 
 new Chart("Chart1", {
@@ -61,7 +61,7 @@ new Chart("Chart1", {
 });
 
 xValues = ["Actual Character Count", "Summarized Character Count"];
-yValues = [55, 15];
+yValues = [{{ch1}}, {{ch2}}];
 barColors = ["green","orange"];
 
 new Chart("Chart2", {
@@ -109,13 +109,13 @@ new Chart("Chart2", {
 
 <div id="dates">
   <h1 class="text-2xl my-10 font-semibold text-center">Keywords used in the file.</h1>
+  <div class="mb-10 flex flex-row justify-center flex-wrap">
   {% for items in keywords %}
   {% for item in items %}
-  <div class="mb-10 flex flex-row justify-between flex-wrap">
-    <div class="text-xl" style="background-color: darkmagenta; padding: 5px 10px; border-radius: 20px;"><a href="https://www.dictionary.com/browse/{{item}}">{{item}}</a></div>
+    <div class="text-xl" style="background-color: darkmagenta; padding: 5px 10px; margin: 10px; border-radius: 20px;"><a href="https://www.dictionary.com/browse/{{item}}">{{item}}</a></div>
+  {% endfor %}
+  {% endfor %}
   </div>
-  {% endfor %}
-  {% endfor %}
 </div>
 
 <div id="dates">

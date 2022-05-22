@@ -1,0 +1,184 @@
+body {
+padding: 0;
+margin: 0;
+font-family: Arial, Tahoma;
+}
+
+header {
+display: flex;
+align-items: center;
+background-color: lightgray;
+margin-top: 0;
+margin-bottom: 20px;
+padding: 10px 0;
+}
+
+header img {
+height: 50px;
+width: 50px;
+margin: 0 20px;
+}
+.window button, .add-function{
+    border: 2px solid white;
+    padding: 3px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    background-color: transparent;
+}
+header a {
+color: inherit;
+text-decoration: none;
+}
+
+button {
+margin: 15px 0;
+padding: 8px;
+font-size: 15px;
+color: black;
+}
+
+
+
+#function-template {
+display: none
+}
+
+#canvas {
+width: 45%;
+height: 45%;
+}
+
+.title {
+font-size: 25px;
+}
+
+.subtitle {
+font-size: 10px;
+}
+
+.tab {
+margin: 0 20px;
+cursor: pointer;
+}
+
+.calculator {
+display: flex;
+margin: auto;
+justify-content: center;
+}
+
+.about-page {
+margin: 50px;
+}
+
+.controls {
+display: flex;
+flex-direction: column;
+width: 500px;
+align-items: center;
+}
+
+.navigator {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+font-size: 22px;
+}
+
+.navigator > div {
+size: 15px;
+margin: 0 12px;
+background-color: whitesmoke;
+padding: 5px;
+border-radius: 10%;
+box-shadow: 1px 1px 1px 1px lightgray;
+cursor: pointer;
+}
+
+.functions {
+display: flex;
+flex-direction: column;
+height: 200px;
+overflow-y: auto;
+width: 400px;
+align-items: center;
+}
+
+.function-tab {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.delete {
+cursor: pointer;
+color: grey;
+margin-left: 5px;
+}
+
+.function-tab input {
+padding: 5px;
+margin: 10px 0;
+font-size: 15px;
+width: 160px;
+}
+
+.function-tab select {
+padding: 5px 0;
+margin: 10px 0;
+font-size: 15px;
+}
+
+.window {
+margin: 30px 0;
+text-align: center;
+}
+
+.window input {
+width: 80px;
+margin: 10px;
+}
+
+.table-tab {
+text-align: center;
+}
+
+.calculate-tab input {
+margin: 10px 0;
+padding: 5px;
+}
+
+.calculate-tab select {
+width: 80px;
+margin: 5px;
+padding: 5px;
+}
+
+.warning {
+color: red;
+}
+
+table {
+margin-top: 30px;
+width: 300px;
+border-collapse: collapse;
+border: 1px solid black;
+}
+
+th {
+border: 1px solid black;
+}
+
+td {
+border: 1px solid black;
+border-left: 1px solid black;
+}
+
+.plotter input{
+    color: black;
+}
