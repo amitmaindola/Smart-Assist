@@ -4,8 +4,10 @@ from flask import *
 from transformers import pipeline
 import moviepy.editor
 from question_answer.question_generator import generate_questions
+from summary import summarizer
 import speech_recognition as sr
 import os
+import nltk
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
@@ -31,12 +33,6 @@ def audio_to_text(path):
         text = r.recognize_google(audio_data)
         print(text)
         return text
-
-#text_to_summarizer
-def text_summary(text):
-    summarizer = pipeline("summarization", model="t5-base", tokenizer="t5-base", framework="tf")
-    summary_text = summarizer(text, max_length=text.length//2, min_length=5, do_sample=False)[0]['summary_text']
-    print(summary_text)
 
 # Keywords Finder
 def keyword_generator(text,range, top_n):
@@ -77,7 +73,6 @@ def success():
         # # summary_text = text_summary(text)
         else:
             text = request.form.get("inputText")
-        summary_text = "This is summary"
         # Generating Questions
         questions_data = generate_questions(text)
         print(questions_data)
@@ -89,11 +84,28 @@ def success():
         keywords.append(keyword_generator(text, 1, 5))
         keywords.append(keyword_generator(text, 2, 3))
         keywords.append(keyword_generator(text, 3, 1))
-        return render_template('summary.html', actualText = text, summary_text = summary_text, questions_data = questions_data, keywords = keywords)
+        ch1 = len(text);
+        w1 = len(text.split())
+        sentences = nltk.sent_tokenize(text)
+        summaryLen = len(sentences)
+        summary_text=summarizer(text, summaryLen//2)
+        ch2 = len(summary_text);
+        w2 = len(summary_text.split())
+        print(summary_text)
+
+        return render_template('summary.html', actualText = text, summary_text = summary_text, questions_data = questions_data, keywords = keywords, w1 = w1, w2 = w2, ch1 = ch1, ch2 = ch2)
 
 @app.route("/summary", methods = ['GET'])
 def summary():
     return render_template('summary.html')
+
+@app.route("/graph", methods=['GET'])
+def graph():
+    return render_template('graph.html')
+
+@app.route("/calculator", methods=['GET'])
+def graph():
+    return render_template('calculator.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
